@@ -15,7 +15,7 @@ var bulkmail = mongoose.model("bulkmail", {}, "bulmail")
 
 
 app.get("/", function (req, res) {
-    res.send("hey")
+     res.json({ message: "Backend running on Vercel" });
 })
 
 app.post("/sendemail", function (req, res) {
@@ -58,6 +58,8 @@ app.post("/sendemail", function (req, res) {
 
 })
 
-app.listen(5000, function () {
-    console.log("server started")
-})
+// app.listen(5000, function () {
+//     console.log("server started")
+// })
+
+export default app;
