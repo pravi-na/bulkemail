@@ -59,8 +59,9 @@ app.post("/sendemail", function (req, res) {
 
 })
 
-// app.listen(5000, function () {
-//     console.log("server started")
-// })
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, function () {
+    console.log("server started on port " + PORT)
+})
 
-export default app;
+module.exports = app;
