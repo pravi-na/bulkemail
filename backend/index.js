@@ -16,6 +16,7 @@ var bulkmail = mongoose.model("bulkmail", {}, "bulmail")
 
 app.get("/", function (req, res) {
      res.json({ message: "Backend running on Vercel" });
+     res.json({ message: "Backend running on Vercel" });
 })
 
 app.post("/sendemail", function (req, res) {
